@@ -3,7 +3,7 @@
 
         <div class="card-body">'
 
-           <?php the_excerpt(); ?>
+            <?php the_excerpt(); ?>
 
             <a href="<?php the_permalink(); ?>" class="btn btn-primary rounded">Voir</a>
         </div>

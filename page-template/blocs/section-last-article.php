@@ -1,8 +1,10 @@
 <?php global $posts; ?>
 
 <section class="section">
-    <div class="container">
-        <?= get_field('title') ?>
+    <div class="container mb-9">
+        <h4 class="mb-2">
+            <?= get_field('title') ?>
+        </h4>
         <?php if($posts = get_field('last_article')): ?>
             <div class="row">
 
@@ -21,6 +23,10 @@
                                 </div>
 
                                 <?= $post->post_excerpt; ?>
+
+                                <div class="d-flex justify-content-end">
+                                    <a href="<?= $post->guid; ?>" class=" btn-link rounded rounded-pill">Voir</a>
+                                </div>
 
                             </div>
 
